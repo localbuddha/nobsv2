@@ -2,6 +2,9 @@ package ua.ynimets.nobsv2.product;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import ua.ynimets.nobsv2.product.model.Product;
+
+import java.util.List;
 
 @RestController
 public class ProductController {
@@ -27,7 +30,7 @@ public class ProductController {
     }
 
     @GetMapping
-    public ResponseEntity<String> getProduct() {
+    public ResponseEntity<List<Product>> getProduct() {
         return getProductService.execute(null);
     }
 
