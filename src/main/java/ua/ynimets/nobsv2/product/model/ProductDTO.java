@@ -12,9 +12,6 @@ public class ProductDTO {
     private String name;
     private String description;
 
-    public ProductDTO(Product product) {
-    }
-
     public static ProductDTO from(Product product) {
         return new ProductDTO(product.getId(), product.getName(), product.getDescription());
     }
