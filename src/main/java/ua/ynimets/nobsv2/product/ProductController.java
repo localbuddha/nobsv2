@@ -6,7 +6,9 @@ import ua.ynimets.nobsv2.product.model.Product;
 import ua.ynimets.nobsv2.product.model.ProductDTO;
 
 import java.util.List;
-
+@AllArgsConstructor
+@Getter
+@Setter
 @RestController
 public class ProductController {
     private final CreateProductService createProductService;
